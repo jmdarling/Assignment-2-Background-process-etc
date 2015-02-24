@@ -4,5 +4,14 @@
     <string name="app_name">Assignment 2: Background process, etc.</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="enter_a_stock_symbol">Enter a stock symbol</string>
+    <string name="search">Search</string>
+    <string name="date">Date</string>
+    <string name="open">Open</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="close">Close</string>
+    <string name="volume">Volume</string>
+    <string name="adjusted_close">Adjusted Close</string>
 
 </resources>
