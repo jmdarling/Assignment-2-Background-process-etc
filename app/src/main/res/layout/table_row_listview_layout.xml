@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_below="@id/query_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/symbol"
+                android:text="" />
+            <TextView
+                android:id="@+id/date"
+                android:text="" />
+            <TextView
+                android:id="@+id/open"
+                android:text="" />
+            <TextView
+                android:id="@+id/high"
+                android:text="" />
+            <TextView
+                android:id="@+id/low"
+                android:text="" />
+            <TextView
+                android:id="@+id/close"
+                android:text="" />
+            <TextView
+                android:id="@+id/volume"
+                android:text="" />
+            <TextView
+                android:id="@+id/adjusted_close"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
