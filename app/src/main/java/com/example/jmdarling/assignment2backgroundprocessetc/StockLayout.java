@@ -1,14 +1,29 @@
+/**
+ * Created by:
+ *  Jonathan Darling - jxd128130
+ *
+ * Development started:
+ *  24 February 2015.
+ *
+ * Written for:
+ *  Assignment 2: Background process, etc. - CS4V95.015 Undergraduate Topics in Computer Science
+ *
+ * This module contains the StockAdapter class, an extension of the RelativeLayout.
+ */
+
 package com.example.jmdarling.assignment2backgroundprocessetc;
 
 import android.content.Context;
-import android.widget.LinearLayout;
+import android.util.AttributeSet;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * Created by jmdarling on 2/24/15.
+ * Layout to represent a Stock object.
+ *
+ * Created by Jonathan Darling.
  */
-public class StockLayout extends LinearLayout {
-    private Stock mStock;
+public class StockLayout extends RelativeLayout {
     private TextView mSymbolTextView;
     private TextView mDateTextView;
     private TextView mOpenTextView;
@@ -18,10 +33,26 @@ public class StockLayout extends LinearLayout {
     private TextView mVolumeTextView;
     private TextView mAdjustedCloseTextView;
 
-    public StockLayout(Context context) {
-        super(context);
+    /**
+     * Constructor.
+     *
+     * @param context
+     *  The Context the view is running in.
+     * @param attributeSet
+     *  The attributes of the XML tag that is inflating the view.
+     *
+     * Created by Jonathan Darling.
+     */
+    public StockLayout(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
     }
 
+    /**
+     * Final step of View inflation.
+     * Attach handles to the TextViews in the inflated View.
+     *
+     * Created by Jonathan Darling.
+     */
     @Override
     public void onFinishInflate() {
         super.onFinishInflate();
@@ -35,8 +66,14 @@ public class StockLayout extends LinearLayout {
         mAdjustedCloseTextView = (TextView)findViewById(R.id.adjusted_close);
     }
 
+    /**
+     * Set the Stock to be used for the View.
+     * This Stock's data will be used to populate the View's TextViews.
+     *
+     * @param stock
+     *  The Stock object whose data will be used to populate the View's TextViews.
+     */
     public void setStock(Stock stock) {
-        mStock = stock;
         mSymbolTextView.setText(stock.getSymbol());
         mDateTextView.setText(stock.getDate());
         mOpenTextView.setText(stock.getOpen());

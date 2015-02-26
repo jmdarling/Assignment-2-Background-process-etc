@@ -1,3 +1,16 @@
+/**
+ * Created by:
+ *  Jonathan Darling - jxd128130
+ *
+ * Development started:
+ *  24 February 2015.
+ *
+ * Written for:
+ *  Assignment 2: Background process, etc. - CS4V95.015 Undergraduate Topics in Computer Science
+ *
+ * This module contains the Stock class.
+ */
+
 package com.example.jmdarling.assignment2backgroundprocessetc;
 
 /**
@@ -6,45 +19,13 @@ package com.example.jmdarling.assignment2backgroundprocessetc;
  * Created by Jonathan Darling.
  */
 public class Stock {
-
-    /**
-     * The stock's symbol.
-     */
     private String mSymbol;
-
-    /**
-     * The stock's date.
-     */
     private String mDate;
-
-    /**
-     * The stock's opening price.
-     */
     private String mOpen;
-
-    /**
-     * The stock's high price.
-     */
     private String mHigh;
-
-    /**
-     * The stock's low price.
-     */
     private String mLow;
-
-    /**
-     * The stock's closing price.
-     */
     private String mClose;
-
-    /**
-     * The stock's volume.
-     */
     private String mVolume;
-
-    /**
-     * The stock's adjusted closing price.
-     */
     private String mAdjustedClose;
 
     /**
@@ -67,7 +48,7 @@ public class Stock {
      * @param adjustedClose
      *  The stock's adjusted closing price.
      *
-     *  Created by Jonathan Darling.
+     * Created by Jonathan Darling.
      */
     public Stock(String symbol, String date, String open, String high, String low, String close, String volume, String adjustedClose) {
         mSymbol = symbol;
