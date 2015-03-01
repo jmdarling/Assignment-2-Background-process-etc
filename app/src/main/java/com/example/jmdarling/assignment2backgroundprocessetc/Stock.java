@@ -19,7 +19,6 @@ package com.example.jmdarling.assignment2backgroundprocessetc;
  * Created by Jonathan Darling.
  */
 public class Stock {
-    private String mSymbol;
     private String mDate;
     private String mOpen;
     private String mHigh;
@@ -31,8 +30,6 @@ public class Stock {
     /**
      * Constructor.
      *
-     * @param symbol
-     *  The stock's symbol.
      * @param date
      *  The stock's date.
      * @param open
@@ -50,8 +47,7 @@ public class Stock {
      *
      * Created by Jonathan Darling.
      */
-    public Stock(String symbol, String date, String open, String high, String low, String close, String volume, String adjustedClose) {
-        mSymbol = symbol;
+    public Stock(String date, String open, String high, String low, String close, String volume, String adjustedClose) {
         mDate = date;
         mOpen = open;
         mHigh = high;
@@ -59,14 +55,6 @@ public class Stock {
         mClose = close;
         mVolume = volume;
         mAdjustedClose = adjustedClose;
-    }
-
-    public String getSymbol() {
-        return mSymbol;
-    }
-
-    public void setSymbol(String mSymbol) {
-        this.mSymbol = mSymbol;
     }
 
     public String getDate() {

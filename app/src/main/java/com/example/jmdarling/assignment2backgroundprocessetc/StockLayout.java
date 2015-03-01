@@ -56,7 +56,6 @@ public class StockLayout extends RelativeLayout {
     @Override
     public void onFinishInflate() {
         super.onFinishInflate();
-        mSymbolTextView = (TextView)findViewById(R.id.symbol);
         mDateTextView = (TextView)findViewById(R.id.date);
         mOpenTextView = (TextView)findViewById(R.id.open);
         mHighTextView = (TextView)findViewById(R.id.high);
@@ -74,7 +73,6 @@ public class StockLayout extends RelativeLayout {
      *  The Stock object whose data will be used to populate the View's TextViews.
      */
     public void setStock(Stock stock) {
-        mSymbolTextView.setText(stock.getSymbol());
         mDateTextView.setText(stock.getDate());
         mOpenTextView.setText(stock.getOpen());
         mHighTextView.setText(stock.getHigh());

@@ -10,9 +10,6 @@
         android:layout_height="wrap_content">
         <TableRow>
             <TextView
-                android:id="@+id/symbol"
-                android:text="" />
-            <TextView
                 android:id="@+id/date"
                 android:text="" />
             <TextView
