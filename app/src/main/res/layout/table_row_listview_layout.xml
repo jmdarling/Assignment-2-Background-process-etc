@@ -4,32 +4,54 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TableLayout
-        android:stretchColumns="*"
         android:layout_below="@id/query_control"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableRow>
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TableRow
+            android:weightSum="1">
             <TextView
                 android:id="@+id/date"
-                android:text="" />
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"/>
             <TextView
                 android:id="@+id/open"
-                android:text="" />
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:gravity="center"/>
             <TextView
                 android:id="@+id/high"
-                android:text="" />
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:gravity="center"/>
             <TextView
                 android:id="@+id/low"
-                android:text="" />
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:gravity="center"/>
             <TextView
                 android:id="@+id/close"
-                android:text="" />
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:gravity="center"/>
             <TextView
                 android:id="@+id/volume"
-                android:text="" />
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"/>
             <TextView
                 android:id="@+id/adjusted_close"
-                android:text="" />
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"/>
         </TableRow>
     </TableLayout>
 

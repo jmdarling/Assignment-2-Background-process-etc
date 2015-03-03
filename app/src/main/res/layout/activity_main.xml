@@ -39,25 +39,46 @@
     <!--Table header-->
     <TableLayout
         android:id="@+id/table_header"
-        android:stretchColumns="*"
         android:layout_below="@id/query_control"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1">
         <TableRow>
             <TextView
-                android:text="@string/date" />
+                android:text="@string/date"
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:gravity="center"/>
             <TextView
-                android:text="@string/open" />
+                android:text="@string/open"
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:gravity="center"/>
             <TextView
-                android:text="@string/high" />
+                android:text="@string/high"
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:gravity="center"/>
             <TextView
-                android:text="@string/low" />
+                android:text="@string/low"
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:gravity="center"/>
             <TextView
-                android:text="@string/close" />
+                android:text="@string/close"
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:gravity="center"/>
             <TextView
-                android:text="@string/volume" />
+                android:text="@string/volume"
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:gravity="center"/>
             <TextView
-                android:text="@string/adjusted_close" />
+                android:text="@string/adjusted_close"
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:gravity="center"/>
         </TableRow>
     </TableLayout>
 

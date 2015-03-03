@@ -12,6 +12,6 @@
     <string name="low">Low</string>
     <string name="close">Close</string>
     <string name="volume">Volume</string>
-    <string name="adjusted_close">Adjusted Close</string>
+    <string name="adjusted_close">Adjusted\nClose</string>
 
 </resources>
